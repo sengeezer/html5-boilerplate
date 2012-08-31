@@ -1,2 +1,13 @@
-# Include your project-specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+# Git ignore	  #
+###################
+*.orig
+*.sass-cache*
+*.diff
+# *_TEST.html
+
+# OS generated files #
+######################
+.DS_Store*
+thumbs.db
+Icon?
+Thumbs.db
