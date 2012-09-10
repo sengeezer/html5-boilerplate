@@ -52,14 +52,12 @@ body { margin: 0; }
 
 /* Links */
 
-// Addresses `outline` inconsistency between Chrome and other browsers
-
-a:focus { outline: thin dotted; }
-
-// Improves readability when focused and also mouse hovered in all browsers
-
-a:active,
-a:hover { outline: 0; }
+a {
+	// Addresses `outline` inconsistency between Chrome and other browsers
+	&:focus { outline: thin dotted; }
+	// Improves readability when focused and also mouse hovered in all browsers
+	&:active, &:hover { outline: 0; }
+}
 
 /* Typography */
 
@@ -137,14 +135,13 @@ pre {
 
 // Addresses CSS quotes not supported in IE 6/7
 
-q { quotes: none; }
-
-// Addresses `quotes` property not supported in Safari 4
-
-q:before,
-q:after {
-    content: '';
-    content: none;
+q {
+	quotes: none;
+	// Addresses `quotes` property not supported in Safari 4
+	&:before, &:after {
+		content: '';
+	    content: none;
+	}
 }
 
 // Addresses inconsistent and variable font size in all browsers
@@ -153,35 +150,30 @@ small { font-size: 80%; }
 
 // Prevents `sub` and `sup` affecting `line-height` in all browsers
 
-sub, sup {
+%subsup {
     font-size: 75%;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
 }
 
-sup { top: -0.5em; }
-
-sub { bottom: -0.25em; }
+sup { @extend subsup; top: -0.5em; }
+sub { @extend subsup; bottom: -0.25em; }
 
 /* Lists */
 
 // Addresses margins set differently in IE 6/7
 
-dl, menu,
-ol, ul { margin: 1em 0; }
-
+dl, menu, ol, ul { margin: 1em 0; }
 dd { margin: 0 0 0 40px; }
 
 // Addresses paddings set differently in IE 6/7
 
-menu, ol,
-ul { padding: 0 0 0 40px; }
+menu, ol, ul { padding: 0 0 0 40px; }
 
 // Corrects list images handled incorrectly in IE 7
 
-nav ul,
-nav ol {
+nav ul, nav ol {
     list-style: none;
     list-style-image: none;
 }
