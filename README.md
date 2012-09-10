@@ -1,9 +1,13 @@
 # [HTML5 Boilerplate](http://html5boilerplate.com)
 
+## SASS flavor
+
 HTML5 Boilerplate is a professional front-end template for building fast,
 robust, and adaptable web apps or sites.
 
-This project is the product of many years of iterative development and combined
+This version uses [SASS](http://sass-lang.com) to facilitate integration into other projects and does not include much of the handholding of the original.
+
+The HTML 5 Boilerplate project is the product of many years of iterative development and combined
 community knowledge. It does not impose a specific development philosophy or
 framework, so you're free to architect your code in the way that you want.
 
